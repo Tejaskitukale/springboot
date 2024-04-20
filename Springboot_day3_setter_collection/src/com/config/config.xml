@@ -1,0 +1,28 @@
+c<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+        <bean id="c" class="com.model.College">
+        <property name="cname">
+        <list>
+        <value>coep</value>
+        <value>scoe</value>
+        </list>
+        </property>
+        <property name="department">
+        <set>
+        <value>IT</value>
+        <value>Electrical</value>
+        
+        </set>
+        
+        </property>
+        <property name="course">
+        <map>
+        <entry key="1" value="java"></entry>
+        <entry key="2" value="python"></entry>
+        </map>
+        </property>
+        </bean>
+</beans>
