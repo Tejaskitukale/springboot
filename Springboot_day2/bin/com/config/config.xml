@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        <bean id="st" class="com.model.Student">
+        <property name="rollno" value="1"></property>
+        <property name="sname" value="tejas"></property>
+        <property name="contact" value="9545006608"></property>
+        <property name="marks" value="50.00"></property>
+        
+        </bean>
+        
+        </beans>

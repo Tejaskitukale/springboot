@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        <bean id="a" class="com.model.address">
+        <property name="pincode" value="657788"></property>
+        <property name="area" value="Karve nagar"></property>
+        <property name="hno" value="10"></property>
+        </bean>
+        
+        <bean id="s" class="com.model.Student">
+        <property name="rollno" value="87"></property>
+        <property name="sname" value="tejas"></property>
+        <property name="contact" value="8789978676"></property>
+        <property name="marks" value="50"></property>
+        <property name="adr" ref="a"></property>
+        
+        </bean>
+         
+        </beans>
+        
