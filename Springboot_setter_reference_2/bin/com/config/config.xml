@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        
+        <bean id="add" class="com.model.Address">
+        <property name="area" value="near hanuman mandir"></property>
+        <property name="plotno" value="767"></property>
+        <property name="city" value="amt"></property>
+        <property name="state" value="maharastra"></property>
+        <property name="pincode" value="444723"></property>
+        </bean>
+         
+        <bean id="sup" class="com.model.Supplier">
+        <property name="sid" value="12"></property>
+        <property name="sname" value="tejas"></property>
+        <property name="contacts">
+        <list>
+        <value>988949890</value>
+        </list>
+        </property>
+        <property name="adr" ref="add"></property>
+        </bean>
+        
+        <bean id="pro" class="com.model.Product">
+        <property name="pid" value="21"></property>
+        <property name="pname" value="sugar"></property>
+        <property name="category" value="food"></property>
+        <property name="price" value="10900"></property>
+        <property name="sup" ref="sup"></property>
+        </bean>
+        </beans>
+        
+        
+        
