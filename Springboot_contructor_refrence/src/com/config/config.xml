@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+   <bean id="c" class="com.model.Contacts">
+   <constructor-arg name="sim" value="vi"></constructor-arg>
+   <constructor-arg name="contact" value="87776678990"></constructor-arg>
+   
+   </bean>     
+   <bean id="p" class="com.model.Person">
+   <constructor-arg name="pid" value="21"></constructor-arg>
+   <constructor-arg name="pname" value="tejas"></constructor-arg>
+   <constructor-arg name="paddress" value="amt"></constructor-arg>
+   <constructor-arg name="contactts" ref="c"></constructor-arg>
+   
+   </bean>
+        
+        
+        </beans>
