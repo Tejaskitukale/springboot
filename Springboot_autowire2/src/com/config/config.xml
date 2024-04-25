@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+        <bean id="xyz" class="com.model.Address">
+        <property name="area" value="karve nagar"></property>
+        <property name="plotno" value="545"></property>
+        <property name="city" value="pune"></property>
+        <property name="state" value="maharastra"></property>
+        <property name="pincode" value="333546"></property>
+        </bean>
+        
+        <bean id="pr" class="com.model.Product" autowire="byName">
+        <property name="pid" value="43"></property>
+        <property name="pname" value="steel"></property>
+        <property name="category" value="metal"></property>
+        <property name="price" value="6000"></property>
+        
+        
+        </bean>
+        
+        
+        
+      
+        
+        </beans>
